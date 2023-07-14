@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .book-info {
+        margin-top: 20px;
+      }
+
+      .book-info img {
+        width: 200px;
+        height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .book-info h2 {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .book-info p {
+        text-align: center;
+      }
+
+      .book-info .description {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Book Details</h1>
+
+      <div class="book-info">
+        <img src="book-cover.jpg" alt="Book Cover" />
+        <h2>Title: Django for Beginners</h2>
+        <p>Author: Jane Doe</p>
+        <p>Publication Year: 2022</p>
+        <p>ISBN: 9781234567890</p>
+        <div class="description">
+            <h3>Description</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et
+            velit sed mauris venenatis viverra vitae ac ex. Proin dapibus mattis
+            lectus, in lacinia nibh tempor id. Sed consequat velit a magna
+            vulputate, vitae cursus justo bibendum. Mauris efficitur dolor et
+            eleifend egestas.
+        </p>
+        </div>
+        {% for i in books %}
+        <ul>
+            <li>{{i}}</li>
+        </ul>
+        {% endfor %}
+    </div>
+    </div>
+    </body>
+</html>

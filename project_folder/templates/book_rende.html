@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    {% for i in books %}
+    <div class="col-md-4">
+      <div class="card mb-3 book-card" style="height: 1000px;">
+        <div class="card-header">
+          <h1>books_rende</h1>
+        </div>
+        <div class="card-body book-info">
+          <h2>Related knowledge about this book</h2>
+          <div class="card">
+            <img src="https://blog-cdn.reedsy.com/directories/admin/featured_image/591/medium_dissecting-the-cover-of-a-book-ee0d6a.jpg" alt="{{ i.book }} Cover" class="card-img-top" />
+            <div class="card-body">
+              <h2>Title: {{ i.book }}</h2>
+              <p>Author: {{ i.author }}</p>
+              <p>Publication Year: unknown</p>
+              <p>ISBN: 9781234567890</p>
+              <div class="description">
+                <h3>Description</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et velit sed mauris venenatis viverra vitae ac ex. Proin dapibus mattis lectus, in lacinia nibh tempor id. Sed consequat velit a magna vulputate, vitae cursus justo bibendum. Mauris efficitur dolor et eleifend egestas.
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}

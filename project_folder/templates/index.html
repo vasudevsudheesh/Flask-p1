@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Custom colors */
+      body {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+      }
+
+      nav ul li a {
+        color: #fff;
+      }
+
+      main {
+        flex-grow: 1;
+      }
+
+      section {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+    </style>
+    <title>My Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar navbar-dark bg-dark">
+      <nav class="navbar-nav">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="navbar navbar-dark bg-dark">
+      <ul class="navbar-nav" style="background-color: orange">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1>Welcome to My Website</h1>
+        <p>This is a sample HTML page.</p>
+      </section>
+
+      <section>
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae
+          magna vel est volutpat convallis. Aliquam erat volutpat. Aenean
+          pellentesque consequat velit, vel luctus lorem aliquet a. Sed lacinia
+          tellus ut ipsum feugiat, non aliquam sem dignissim.
+        </p>
+      </section>
+
+      <section>
+        <h2>Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Graphic Design</li>
+          <li>SEO Optimization</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center">
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://example.com/path/to/your/script.js"></script>
+  </body>
+</html>
